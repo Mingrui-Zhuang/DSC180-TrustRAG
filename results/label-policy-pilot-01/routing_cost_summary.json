@@ -1,0 +1,98 @@
+{
+  "training_steps": 98,
+  "training_action_agreements": 48,
+  "groups": {
+    "overall": {
+      "cases": 48,
+      "repaired_cases": 34,
+      "action_agreements_among_repaired": 8,
+      "identical_final_answers": 25,
+      "costs": {
+        "baseline": {
+          "mean_seconds": 5.8645013072527945,
+          "mean_input_tokens": 540.75,
+          "mean_output_tokens": 75.35416666666667
+        },
+        "with_label": {
+          "mean_seconds": 11.792211712066395,
+          "mean_input_tokens": 1468.8125,
+          "mean_output_tokens": 142.6875
+        },
+        "without_label": {
+          "mean_seconds": 11.902060935506597,
+          "mean_input_tokens": 1463.3125,
+          "mean_output_tokens": 144.875
+        }
+      }
+    },
+    "clean_complete": {
+      "cases": 16,
+      "repaired_cases": 12,
+      "action_agreements_among_repaired": 3,
+      "identical_final_answers": 7,
+      "costs": {
+        "baseline": {
+          "mean_seconds": 5.208428248530254,
+          "mean_input_tokens": 585,
+          "mean_output_tokens": 87.0625
+        },
+        "with_label": {
+          "mean_seconds": 11.851896340143867,
+          "mean_input_tokens": 1594.6875,
+          "mean_output_tokens": 162.9375
+        },
+        "without_label": {
+          "mean_seconds": 11.831105734338053,
+          "mean_input_tokens": 1560.9375,
+          "mean_output_tokens": 165.3125
+        }
+      }
+    },
+    "complete_distractors": {
+      "cases": 16,
+      "repaired_cases": 11,
+      "action_agreements_among_repaired": 3,
+      "identical_final_answers": 9,
+      "costs": {
+        "baseline": {
+          "mean_seconds": 9.082351469201967,
+          "mean_input_tokens": 597.8125,
+          "mean_output_tokens": 90.6875
+        },
+        "with_label": {
+          "mean_seconds": 14.352911548921838,
+          "mean_input_tokens": 1422.6875,
+          "mean_output_tokens": 155.125
+        },
+        "without_label": {
+          "mean_seconds": 14.902677791542374,
+          "mean_input_tokens": 1456.75,
+          "mean_output_tokens": 159.6875
+        }
+      }
+    },
+    "missing_support": {
+      "cases": 16,
+      "repaired_cases": 11,
+      "action_agreements_among_repaired": 2,
+      "identical_final_answers": 9,
+      "costs": {
+        "baseline": {
+          "mean_seconds": 3.3027242040261626,
+          "mean_input_tokens": 439.4375,
+          "mean_output_tokens": 48.3125
+        },
+        "with_label": {
+          "mean_seconds": 9.171827247133479,
+          "mean_input_tokens": 1389.0625,
+          "mean_output_tokens": 110
+        },
+        "without_label": {
+          "mean_seconds": 8.972399280639365,
+          "mean_input_tokens": 1372.25,
+          "mean_output_tokens": 109.625
+        }
+      }
+    }
+  }
+}
