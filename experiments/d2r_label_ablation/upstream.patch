@@ -1,0 +1,69 @@
+diff --git a/src/knowledge_graph.py b/src/knowledge_graph.py
+index d9922f2..1d11c2e 100644
+--- a/src/knowledge_graph.py
++++ b/src/knowledge_graph.py
+@@ -112,6 +112,7 @@ class KnowledgeGraph:
+                 ret_triplet_embed_list = map(self.encode_triplet_elements, ret_triplet_list)
+                 q_s, q_r, q_o = self.encode_triplet_elements((sub, rel, obj))
+                 status = [self.check_triplet(q_s, q_r, q_o, ds, dr, do) for ds, dr, do in ret_triplet_embed_list]
++                prediction = "MISSING"
+                 if "CONSISTENT" in status:
+                     prediction = "CONSISTENT"
+                 elif "CONFLICT" in status:
+diff --git a/src/rag_engine.py b/src/rag_engine.py
+index ca429ab..6e010fe 100644
+--- a/src/rag_engine.py
++++ b/src/rag_engine.py
+@@ -125,6 +125,7 @@ class RAGEngine:
+             )
+             retriever.persist(os.path.join(self.output_path, self.kwargs["bm25_retriever_storage"]))
+ 
++        retriever.similarity_top_k = similarity_top_k
+         return retriever
+ 
+     def build_query_engine(self, retriever, similarity_posprocess=False, reranker=False, prompt_edit=False):
+@@ -227,7 +228,10 @@ class RAGEngine:
+ 
+         return response_obj
+     
+-    def query_shortanswer(self, query_str, params={}, consistency_check=False, entailment_check=False):
++    def query_shortanswer(
++        self, query_str, params={}, consistency_check=False,
++        entailment_check=False, *, evidence_override=None,
++    ):
+         retriever_type = params.get("retriever", "bm25")
+         topk = params.get("topk", 5)
+         reranker = params.get("reranker", False)
+@@ -247,15 +251,29 @@ class RAGEngine:
+             self.knowledgebase.evolve()
+             self.build_nodes()
+             if retriever_type == "dense":
+-                retriever = self.build_dense_retriever(topk)
++                retriever = self.build_dense_retriever(topk, reindex=True)
+             elif retriever_type == "bm25":
+-                retriever = self.build_bm25_retriever(topk)
++                retriever = self.build_bm25_retriever(topk, reindex=True)
+             
+             query_engine = self.build_query_engine(retriever, reranker=reranker, prompt_edit=prompt_edit)
+         else:
+             query_engine = self.query_engines[f"{retriever_type}_{topk}_{reranker}_{prompt_edit}"]
+         
+-        response_object = query_engine.query(query_str)
++        if evidence_override is None:
++            response_object = query_engine.query(query_str)
++        else:
++            from llama_index.core.schema import NodeWithScore, QueryBundle, TextNode
++
++            bundle = QueryBundle(query_str)
++            nodes = [
++                NodeWithScore(node=TextNode(
++                    id_=passage["passage_id"],
++                    text=f"{passage['title']}\n{passage['text']}",
++                ))
++                for passage in evidence_override
++            ]
++            query_engine.retrieve(bundle)  # Include ordinary retrieval in the timing.
++            response_object = query_engine.synthesize(bundle, nodes)
+         response = response_object.response.strip()
+         if response == "Empty Response":
+             # In case no node found by the retriever:

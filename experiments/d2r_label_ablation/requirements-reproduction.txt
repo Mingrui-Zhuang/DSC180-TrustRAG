@@ -1,0 +1,4 @@
+# Linux / Python 3.11. Install the CUDA 12.1 PyTorch set first (README).
+-c reproduction/constraints.txt
+-r D2R-RAG/requirements.txt
+-r reproduction/requirements-extra.txt

@@ -1,0 +1,9 @@
+D2R-RAG/
+.venv/
+__pycache__/
+*.pyc
+results/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+.env

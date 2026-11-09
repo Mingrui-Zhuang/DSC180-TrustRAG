@@ -1,0 +1,57 @@
+{
+  "scope": "Frozen controlled pilot inputs and historical draft/calibration artifacts. Embedded log paths refer to the original DSMLP run.",
+  "dataset": "HotpotQA",
+  "dataset_url": "https://huggingface.co/datasets/hotpotqa/hotpot_qa",
+  "files": [
+    {
+      "file": "inputs/prepared/draft_inputs.jsonl",
+      "sha256": "3223734a830598da417cba0ede4f792dbc5405930cb3297c7a294a646aebbb91",
+      "bytes": 176385
+    },
+    {
+      "file": "inputs/prepared/audit.jsonl",
+      "sha256": "1cfb208133d58d0ea1617b70815b1aeb68f3bd343fcb72bee2c95eca224a92ba",
+      "bytes": 120521
+    },
+    {
+      "file": "inputs/prepared/pilot_split.json",
+      "sha256": "2d89d6df806e3cdda348560359d6724a892a5093bbee4e6fb66435cbf60f2843",
+      "bytes": 1914
+    },
+    {
+      "file": "inputs/prepared/run_manifest.json",
+      "sha256": "43d33d310e4efa2c87ad8a95b502f443fef460fc333ef2384d6f50d5a36535cb",
+      "bytes": 2224
+    },
+    {
+      "file": "inputs/prepared/repair_corpus.jsonl",
+      "sha256": "c4ffc577a798617854a612f5577ea5f729a44d9e8bba89f647dbfafee816d9f1",
+      "bytes": 304223
+    },
+    {
+      "file": "inputs/prepared/repair_secondary.jsonl",
+      "sha256": "925eebeb6c1db0c6ef18cff4f858066d72646e1f1a19b95f78a36b6db7971784",
+      "bytes": 323074
+    },
+    {
+      "file": "inputs/drafts/controlled_drafts.jsonl",
+      "sha256": "c880929fe00499e125c27e75352a748ba50c7f8a69e2933c1ca0603c3a52d158",
+      "bytes": 295333
+    },
+    {
+      "file": "inputs/drafts/pilot_split.json",
+      "sha256": "b3916495ce8b89bd5847a72577eaff8c191ef49c57448fb9118dd7864e7f50a4",
+      "bytes": 3459
+    },
+    {
+      "file": "inputs/drafts/action_calibration.json",
+      "sha256": "29efe07ff5e71f7aa005d555f3d78bb402c02ab8f84ed95368ebbca5c3f40346",
+      "bytes": 4797
+    },
+    {
+      "file": "inputs/drafts/calibration_plan.json",
+      "sha256": "ed0fce2bc4f570395550cbb7625da04e4701881d8e829ee068be7ad3f860d913",
+      "bytes": 20895
+    }
+  ]
+}
