@@ -1,0 +1,110 @@
+[
+  {
+    "file": "paired_summary.json",
+    "sha256": "95c0c3a9f3ba0fca4c17006ee78c240ed5915c89847ccbed63d48d2c776cf92e"
+  },
+  {
+    "file": "seed180/validation.jsonl",
+    "sha256": "40273dacf9b551bed097a145f505eedf98f721508037c6c8ff328ed876fef1f2"
+  },
+  {
+    "file": "seed180/offline-correctness-01/reference_scores.jsonl",
+    "sha256": "93baac2ffe5977a93f1a8e8c1f47946ca3d109df996e8e8d3cacd0a2e80af5ca"
+  },
+  {
+    "file": "seed180/offline-correctness-01/reference_summary.json",
+    "sha256": "3bad543bbfc522cacaccd27374b8d942528c2d9fb24e94e10dd66de27422a379"
+  },
+  {
+    "file": "seed180/offline-correctness-01/paired_reference_analysis.json",
+    "sha256": "a280e440961ba99140aaf26e4c17ae9f86cf7e01411343f4c2197386638d6a14"
+  },
+  {
+    "file": "seed180/offline-correctness-01/manual_review.jsonl",
+    "sha256": "4e5cb5e5a43bed742cd0d7dae83c3007d3d28a17f36fbd4b8d81a9912ee1de8a"
+  },
+  {
+    "file": "seed180/offline-correctness-human-sensitivity-01/reference_scores.jsonl",
+    "sha256": "3c93a9c96899714afa684e6e434a364c4cabadda2f1741f92c3d2a23f4a93ffa"
+  },
+  {
+    "file": "seed180/offline-correctness-human-sensitivity-01/summary.json",
+    "sha256": "6e9b2611bf9a0f3332de90b2c97b10ed77be4c6f0821abee1f0371d94e3d31cf"
+  },
+  {
+    "file": "seed180/offline-correctness-human-sensitivity-01/adjudications.json",
+    "sha256": "fdaf2e8b702e967b2450d00768fc6185af8dc91dd1605873c5ca339bca142230"
+  },
+  {
+    "file": "seed181/validation.jsonl",
+    "sha256": "19cc566d1139d62bea306504478fc5c91bb55b725fa6859b9d2efb1be54f2206"
+  },
+  {
+    "file": "seed181/offline-correctness-01/reference_scores.jsonl",
+    "sha256": "ffb2e7b7f737c70802e6e9d31feb36720e07678a92a282ca476cf75cedcc236b"
+  },
+  {
+    "file": "seed181/offline-correctness-01/reference_summary.json",
+    "sha256": "073ceefb8fe4c9db9653b9f81a4dba0a220bc0b274b2b2197eb71f1ea97e8118"
+  },
+  {
+    "file": "seed181/offline-correctness-01/paired_reference_analysis.json",
+    "sha256": "9b74f83927b3aaacc4c9fdc7241c0f3a3ce6f04e3e2d481cfb0e75105a45bf2e"
+  },
+  {
+    "file": "seed181/offline-correctness-01/manual_review_results.json",
+    "sha256": "978eca0f70623cd8323588013244c1eb43e335bec1f7ca82437b4256b0e129d2"
+  },
+  {
+    "file": "seed181/offline-correctness-01/manual_review.jsonl",
+    "sha256": "9b5894a3bafb6c7a00fdc19d6b02cfe8d3689226f3403ea0ed03256a0aa46d7d"
+  },
+  {
+    "file": "seed181/offline-correctness-human-sensitivity-01/reference_scores.jsonl",
+    "sha256": "853f58a044d677b82a539138a055140a9fa735a207bf8ef1c17412afb22b34f1"
+  },
+  {
+    "file": "seed181/offline-correctness-human-sensitivity-01/summary.json",
+    "sha256": "3eae5fcc47e337e686c0c173e958888ca2a156a2d4c79b05be6ebe49ef74cc25"
+  },
+  {
+    "file": "seed181/offline-correctness-human-sensitivity-01/adjudications.json",
+    "sha256": "368c5fb5be14b83a39b352ae7696cc321df2f0f6301dcf380d10a2dd75ece280"
+  },
+  {
+    "file": "seed182/validation.jsonl",
+    "sha256": "9c9336eb5a059d26387724f57a89d1cf614cb1cf9ac877d0e63b2a3e83b18f8f"
+  },
+  {
+    "file": "seed182/offline-correctness-01/reference_scores.jsonl",
+    "sha256": "2cd86ea48649575e0675c19c6c2cb10c8adde13c7be45834ded136db8109ef01"
+  },
+  {
+    "file": "seed182/offline-correctness-01/reference_summary.json",
+    "sha256": "982eeb2f84fa0ead25f991fd84dd0a2b400652efdc032c0c0b24cdafb0453517"
+  },
+  {
+    "file": "seed182/offline-correctness-01/paired_reference_analysis.json",
+    "sha256": "7e3428e68ced87046c698956b10c516153ffbaaa2cfed68a319b699fd1b6c1d9"
+  },
+  {
+    "file": "seed182/offline-correctness-01/manual_review_results.json",
+    "sha256": "f6ceb70b6de4eae81ef76e9d184c57b9dcfdba8854a9f686156068779e63e0d1"
+  },
+  {
+    "file": "seed182/offline-correctness-01/manual_review.jsonl",
+    "sha256": "99d6c3494c7f901a427bd6386657e1eb62155641785214b65487eba0e630cfe2"
+  },
+  {
+    "file": "seed182/offline-correctness-human-sensitivity-01/reference_scores.jsonl",
+    "sha256": "50f5b70bb07938347970721cc0fdc48a330b9dc9553868c440cd761de2b453b3"
+  },
+  {
+    "file": "seed182/offline-correctness-human-sensitivity-01/summary.json",
+    "sha256": "83f3702f4cfee38a7e035ad098610fbabaa2fe329370814d81227cc1bb9a47c0"
+  },
+  {
+    "file": "seed182/offline-correctness-human-sensitivity-01/adjudications.json",
+    "sha256": "a885e7db6c0acefa314913fd33284617d98543417688fa4ad5e3952a401ada3b"
+  }
+]

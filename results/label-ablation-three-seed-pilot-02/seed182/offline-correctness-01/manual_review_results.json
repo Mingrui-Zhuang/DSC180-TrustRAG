@@ -1,0 +1,17 @@
+{
+  "reviewed": 20,
+  "sample_size": 20,
+  "agreements": 18,
+  "disagreements": [
+    {
+      "judge_id": "db6f13b2766eea6d8916aff639fcc6c3eb77a54cc8988f13a55ef6ebd7c33c7f",
+      "human_correct": true,
+      "judge_correct": false
+    },
+    {
+      "judge_id": "440640a12f16bb06cb170eac4d264cac7210d4d657159ab870c3571c185b06ad",
+      "human_correct": true,
+      "judge_correct": false
+    }
+  ]
+}
