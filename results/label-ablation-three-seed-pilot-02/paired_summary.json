@@ -1,0 +1,304 @@
+{
+  "scope": "Three-seed pilot on the same 16 validation questions.",
+  "method": "Paired question-cluster percentile bootstrap; average over the three fixed fitted seeds before resampling questions.",
+  "limitations": [
+    "Sensitivity scores correct known grading errors only.",
+    "Intervals do not capture population-level training-seed uncertainty.",
+    "Conditions are exploratory subgroup analyses."
+  ],
+  "seeds": [
+    180,
+    181,
+    182
+  ],
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 180,
+  "sources": {
+    "automated/180": {
+      "path": "/home/m1zhuang/dsc180-runs/label-policy-pilot-02/offline-correctness-01/reference_scores.jsonl",
+      "sha256": "93baac2ffe5977a93f1a8e8c1f47946ca3d109df996e8e8d3cacd0a2e80af5ca"
+    },
+    "automated/181": {
+      "path": "/home/m1zhuang/dsc180-runs/label-policy-pilot-02-seed181/offline-correctness-01/reference_scores.jsonl",
+      "sha256": "ffb2e7b7f737c70802e6e9d31feb36720e07678a92a282ca476cf75cedcc236b"
+    },
+    "automated/182": {
+      "path": "/home/m1zhuang/dsc180-runs/label-policy-pilot-02-seed182/offline-correctness-01/reference_scores.jsonl",
+      "sha256": "2cd86ea48649575e0675c19c6c2cb10c8adde13c7be45834ded136db8109ef01"
+    },
+    "human_sensitivity/180": {
+      "path": "/home/m1zhuang/dsc180-runs/label-policy-pilot-02/offline-correctness-human-sensitivity-01/reference_scores.jsonl",
+      "sha256": "3c93a9c96899714afa684e6e434a364c4cabadda2f1741f92c3d2a23f4a93ffa"
+    },
+    "human_sensitivity/181": {
+      "path": "/home/m1zhuang/dsc180-runs/label-policy-pilot-02-seed181/offline-correctness-human-sensitivity-01/reference_scores.jsonl",
+      "sha256": "853f58a044d677b82a539138a055140a9fa735a207bf8ef1c17412afb22b34f1"
+    },
+    "human_sensitivity/182": {
+      "path": "/home/m1zhuang/dsc180-runs/label-policy-pilot-02-seed182/offline-correctness-human-sensitivity-01/reference_scores.jsonl",
+      "sha256": "50f5b70bb07938347970721cc0fdc48a330b9dc9553868c440cd761de2b453b3"
+    }
+  },
+  "results": {
+    "automated": {
+      "overall": {
+        "original_questions": 16,
+        "cases_per_seed": 48,
+        "mean_accuracy_percent": {
+          "baseline": 41.66666666666667,
+          "with_label": 35.41666666666667,
+          "without_label": 39.58333333333333
+        },
+        "comparisons": {
+          "with_label minus without_label": {
+            "difference_pp": -4.166666666666667,
+            "bootstrap_95_ci_pp": [
+              -13.194444444444445,
+              2.777777777777778
+            ]
+          },
+          "with_label minus baseline": {
+            "difference_pp": -6.249999999999998,
+            "bootstrap_95_ci_pp": [
+              -20.13888888888889,
+              9.027777777777777
+            ]
+          },
+          "without_label minus baseline": {
+            "difference_pp": -2.083333333333333,
+            "bootstrap_95_ci_pp": [
+              -19.444444444444446,
+              15.972222222222223
+            ]
+          }
+        }
+      },
+      "clean_complete": {
+        "original_questions": 16,
+        "cases_per_seed": 16,
+        "mean_accuracy_percent": {
+          "baseline": 62.5,
+          "with_label": 43.75,
+          "without_label": 45.83333333333333
+        },
+        "comparisons": {
+          "with_label minus without_label": {
+            "difference_pp": -2.0833333333333335,
+            "bootstrap_95_ci_pp": [
+              -6.25,
+              0.0
+            ]
+          },
+          "with_label minus baseline": {
+            "difference_pp": -18.75,
+            "bootstrap_95_ci_pp": [
+              -43.75,
+              6.249999999999998
+            ]
+          },
+          "without_label minus baseline": {
+            "difference_pp": -16.666666666666668,
+            "bootstrap_95_ci_pp": [
+              -41.66666666666667,
+              8.333333333333332
+            ]
+          }
+        }
+      },
+      "complete_distractors": {
+        "original_questions": 16,
+        "cases_per_seed": 16,
+        "mean_accuracy_percent": {
+          "baseline": 56.25,
+          "with_label": 31.249999999999993,
+          "without_label": 37.5
+        },
+        "comparisons": {
+          "with_label minus without_label": {
+            "difference_pp": -6.25,
+            "bootstrap_95_ci_pp": [
+              -16.666666666666668,
+              4.166666666666666
+            ]
+          },
+          "with_label minus baseline": {
+            "difference_pp": -25.0,
+            "bootstrap_95_ci_pp": [
+              -45.833333333333336,
+              -6.250000000000002
+            ]
+          },
+          "without_label minus baseline": {
+            "difference_pp": -18.750000000000004,
+            "bootstrap_95_ci_pp": [
+              -41.66666666666667,
+              2.083333333333333
+            ]
+          }
+        }
+      },
+      "missing_support": {
+        "original_questions": 16,
+        "cases_per_seed": 16,
+        "mean_accuracy_percent": {
+          "baseline": 6.25,
+          "with_label": 31.249999999999993,
+          "without_label": 35.416666666666664
+        },
+        "comparisons": {
+          "with_label minus without_label": {
+            "difference_pp": -4.166666666666667,
+            "bootstrap_95_ci_pp": [
+              -22.916666666666668,
+              10.416666666666666
+            ]
+          },
+          "with_label minus baseline": {
+            "difference_pp": 25.0,
+            "bootstrap_95_ci_pp": [
+              10.416666666666666,
+              41.666666666666664
+            ]
+          },
+          "without_label minus baseline": {
+            "difference_pp": 29.166666666666664,
+            "bootstrap_95_ci_pp": [
+              10.416666666666666,
+              49.99999999999999
+            ]
+          }
+        }
+      }
+    },
+    "human_sensitivity": {
+      "overall": {
+        "original_questions": 16,
+        "cases_per_seed": 48,
+        "mean_accuracy_percent": {
+          "baseline": 45.833333333333336,
+          "with_label": 43.75000000000001,
+          "without_label": 46.52777777777778
+        },
+        "comparisons": {
+          "with_label minus without_label": {
+            "difference_pp": -2.777777777777778,
+            "bootstrap_95_ci_pp": [
+              -11.805555555555555,
+              3.4722222222222237
+            ]
+          },
+          "with_label minus baseline": {
+            "difference_pp": -2.083333333333332,
+            "bootstrap_95_ci_pp": [
+              -19.444444444444446,
+              18.055555555555554
+            ]
+          },
+          "without_label minus baseline": {
+            "difference_pp": 0.6944444444444448,
+            "bootstrap_95_ci_pp": [
+              -18.75,
+              21.52777777777778
+            ]
+          }
+        }
+      },
+      "clean_complete": {
+        "original_questions": 16,
+        "cases_per_seed": 16,
+        "mean_accuracy_percent": {
+          "baseline": 68.75,
+          "with_label": 54.166666666666664,
+          "without_label": 56.25
+        },
+        "comparisons": {
+          "with_label minus without_label": {
+            "difference_pp": -2.0833333333333335,
+            "bootstrap_95_ci_pp": [
+              -6.25,
+              0.0
+            ]
+          },
+          "with_label minus baseline": {
+            "difference_pp": -14.583333333333334,
+            "bootstrap_95_ci_pp": [
+              -41.66666666666667,
+              14.583333333333332
+            ]
+          },
+          "without_label minus baseline": {
+            "difference_pp": -12.5,
+            "bootstrap_95_ci_pp": [
+              -39.583333333333336,
+              14.635416666665908
+            ]
+          }
+        }
+      },
+      "complete_distractors": {
+        "original_questions": 16,
+        "cases_per_seed": 16,
+        "mean_accuracy_percent": {
+          "baseline": 62.5,
+          "with_label": 41.66666666666667,
+          "without_label": 47.916666666666664
+        },
+        "comparisons": {
+          "with_label minus without_label": {
+            "difference_pp": -6.25,
+            "bootstrap_95_ci_pp": [
+              -16.666666666666668,
+              4.166666666666666
+            ]
+          },
+          "with_label minus baseline": {
+            "difference_pp": -20.833333333333336,
+            "bootstrap_95_ci_pp": [
+              -43.75,
+              4.166666666666664
+            ]
+          },
+          "without_label minus baseline": {
+            "difference_pp": -14.583333333333334,
+            "bootstrap_95_ci_pp": [
+              -39.583333333333336,
+              10.468749999999241
+            ]
+          }
+        }
+      },
+      "missing_support": {
+        "original_questions": 16,
+        "cases_per_seed": 16,
+        "mean_accuracy_percent": {
+          "baseline": 6.25,
+          "with_label": 35.416666666666664,
+          "without_label": 35.416666666666664
+        },
+        "comparisons": {
+          "with_label minus without_label": {
+            "difference_pp": -3.469446951953614e-16,
+            "bootstrap_95_ci_pp": [
+              -16.666666666666668,
+              12.5
+            ]
+          },
+          "with_label minus baseline": {
+            "difference_pp": 29.166666666666664,
+            "bootstrap_95_ci_pp": [
+              12.499999999999998,
+              47.916666666666664
+            ]
+          },
+          "without_label minus baseline": {
+            "difference_pp": 29.166666666666664,
+            "bootstrap_95_ci_pp": [
+              10.416666666666666,
+              49.99999999999999
+            ]
+          }
+        }
+      }
+    }
+  }
+}

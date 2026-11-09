@@ -1,0 +1,31 @@
+{
+  "scope": "Sensitivity analysis correcting 18 verified judgments; remaining judgments have not all been manually verified.",
+  "source": "/home/m1zhuang/dsc180-runs/label-policy-pilot-02-seed182/offline-correctness-01/reference_scores.jsonl",
+  "source_sha256": "2cd86ea48649575e0675c19c6c2cb10c8adde13c7be45834ded136db8109ef01",
+  "corrected_judge_ids": [
+    "2cfe21310898a27dc6ce64ed94edfe6a5f68073d0ad7043b119bb2b3f102f57c",
+    "428c27e415923867ab0bfd75e7573c9e30d7ffc564e3e933824fa0adaa52bcaf",
+    "440640a12f16bb06cb170eac4d264cac7210d4d657159ab870c3571c185b06ad",
+    "52f8db74e25fbc6268b9115eafd986cea54471a73928b3203d505b7db32e3dbc",
+    "54d36781d6e4b28fe4a9e5bda881d609e04935a53ba8a11043e8b6116f76bf23",
+    "5582d9a73110532679d4908dc6ebff7402d6204e57b94597fb6acec7ebec840a",
+    "82b2c556d3795562fed7294ccb124fca7190edca6834f07b5d0f49e61e63019f",
+    "8846a3f41835919457e9273f9566e67dc6ad3c39825c50064f3c49f2d3fe6568",
+    "8fd709ed7c9b1be9a5bf36ecde2652d371b7d8d7d20f3c46252dde3d1e1aec3d",
+    "9af450523828d23d7a36ad9be96edace65725af43000dec0c403dfae37e8aa49",
+    "a1dca23d303b2272a71592a88569c796e4f824ac62c463a29effea7bbf3f9961",
+    "aeb4f485d91ba679db454de81bd8e10d4e64e5b58335d91a15df944497dc403d",
+    "cb7bb8f1f6670cf12b837eccaae7782b3acf4aee1c9d1d0992721b674e34e917",
+    "cc8376ac136d1f25a3cbd608d5d247d3abe960ea689bc0b5bdd25dce968d895d",
+    "d516cd452c25783a0e4791e912b54a88fdc49281f70c35a94e572afd48e23541",
+    "db6f13b2766eea6d8916aff639fcc6c3eb77a54cc8988f13a55ef6ebd7c33c7f",
+    "e27dfe0e0413b2d47f605807654c6e69d82f7f123fdfbb063cb0ddf02db8823c",
+    "f1f06505eadb6d6dd1e3e52c27af10aa0dea61da959112a188df6f830efa8baf"
+  ],
+  "changed_comparison_rows": 8,
+  "sources": [
+    "https://catalog.afi.com/Film/55907-EQUUS",
+    "https://talkingpicturestv.co.uk/wp-content/uploads/2022/03/11.04-17.04V2.pdf",
+    "https://d23.com/how-classic-disney-characters-led-paige-ohara-to-discover-her-own-disney-destiny/"
+  ]
+}
